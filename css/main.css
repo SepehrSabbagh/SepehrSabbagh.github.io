@@ -25,9 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         {  }
+a:hover   {  }
+a:visited {  }
 
 /*****************************************************************************/
 /*
@@ -50,18 +50,17 @@ nav.navbar .navbar-brand {
 /*
 /*****************************************************************************/
 .posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+	text-align: center;
 }
 
-.posts li {
-  line-height: 1.75em;
+.posts img {
+  	height: 250px;
 }
 
 .posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+	color: #aaa;
+	font-family: Monaco, "Courier New", monospace;
+	font-size: 80%;
 }
 
 /*****************************************************************************/
