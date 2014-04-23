@@ -1,23 +1,22 @@
 ---
 layout: default
-title: Orange Digital - Developer Training
 ---
 
+<div class="posts">
 	{% for post in site.posts %}
 	  {% capture currentmonth %}{{post.date | date: "%B"}}{% endcapture %}
 	  {% if currentmonth != month %}
 
-    	{% unless forloop.first %}</div>{% endunless %}	  	
+    	{% unless forloop.first %}</div>{% endunless %}	
     	<div class="clearfix"></div>
-		<h2>{{ currentmonth }} {{post.date | date: "%Y"}}</h2>
-		<hr/>
+		<h2 class="month-divider">{{ currentmonth }} {{post.date | date: "%Y"}}</h2>
 		<div class="row" id="home">
 
 	  {% endif %}
 
 
     	<div class="col-sm-6 col-md-3">
-    	<div class="posts panel panel-default">
+    	<div class="panel panel-default">
 		  <div class="panel-body">
 		      <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}"></a>
 		      <div class="caption">
@@ -26,10 +25,9 @@ title: Orange Digital - Developer Training
 				<p>{{ post.description }}</p>			
 		      </div>
 		  </div>
-		  <div class="panel-footer">{{ post.date | date: "%-d %B %Y" }}</div>
+		  <div class="panel-footer">{{ post.author }}<br/>{{ post.date | date: "%-d %B %Y" }}</div>
 		</div>
 		</div>
     	{% capture month %}{{currentmonth}}{% endcapture %} 
     {% endfor %}
-
-    <div class="clearfix"></div>
+</div>

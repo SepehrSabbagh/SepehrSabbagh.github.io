@@ -6,40 +6,43 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-	<script src="/js/bootstrap.min.js"></script>
+      	<!-- Bootstrap CSS Files -->
+      	<link rel="stylesheet" href="/css/bootstrap.min.css">
+      	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
+        <!-- Javascript -->
+        <script src="/js/jquery-2.1.0.min.js"></script>
+      	<script src="/js/bootstrap.min.js"></script>
+
+	      {{ page.head }}
     </head>
     <body>
 
 	
 
-	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+      			<span class="sr-only">Toggle navigation</span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Orange Digital</a>
+		      <a class="navbar-brand" href="/">Orange Digital</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-    			<li class="active"><a href="#">Training Material</a></li>
-    			<li><a href="#">How to add a post</a></li>
+    			<li {% if page.selectedTab == nil %} class="active" {% endif %}><a href="/index.html">Training Material</a></li>
+    			<li {% if page.selectedTab == "HowTo" %} class="active" {% endif %}><a href="/jekyll/2014/03/23/Introduction-to-Jekyll.html">How to add a post</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -49,6 +52,8 @@
         <div class="container">
 
           {{ content }}
+
+          <div class="clearfix"></div>
 
           <div class="footer">
             <div class="contact">

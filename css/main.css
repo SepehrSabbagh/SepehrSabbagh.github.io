@@ -17,17 +17,21 @@ body {
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  padding-top: 60px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; 
+h1 { 
+    font-size: 32px;
 }
-
-h1 { margin-bottom: 1em; }
 
 h2 {
-  font-size: 32px;
+  font-size: 22px;
 }
+
+h3 {
+  font-size: 18px;
+}
+
 
 p { margin: 1em 0; }
 
@@ -44,10 +48,21 @@ a:visited {  }
 nav.navbar {
 	background-image: none;
 	box-shadow: none;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.80) !important;
 }
 
 nav.navbar .navbar-brand {
 	color: #F60 !important;
+}
+
+nav.navbar .navbar-nav a {
+  color: #777 !important;
+}
+
+nav.navbar .navbar-nav .active a {
+  color: #000 !important;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.80) !important;
+  box-shadow: none;
 }
 
 /*****************************************************************************/
@@ -59,18 +74,46 @@ nav.navbar .navbar-brand {
 	text-align: center;
 }
 
+.posts .month-divider {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-top: thin solid #ddd;
+  border-bottom: thin solid #ddd;
+}
+
 .posts .panel-body {
 	height: 300px;
 }
 
 .posts .panel-body a img {
+    max-width: 100%;
   	height: 150px;
 }
 
-.posts h3 {
+.posts h2 {
 	color: #aaa;
 	font-size: 18px;
+  color: #777;
 }
+
+/*****************************************************************************/
+/*
+/* Post page
+/*
+/*****************************************************************************/
+
+.post .intro {
+  text-align: center;
+}
+
+.post .intro img {
+  max-height: 100px;
+}
+
+.post .content {
+  text-align: left;
+}
+
 
 /*****************************************************************************/
 /*

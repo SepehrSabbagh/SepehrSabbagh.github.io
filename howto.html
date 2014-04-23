@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "How to add a post"
+author: "Sepehr Sabbagh-pour"
+date:   2014-03-23 11:21:17
+---
+
+<h2>1) Install and setup Jekyll!</h2>
+<p>You need to download and install Jekyll so that you can view your changes locally before publishing:</p>
+
+<h3>Ubuntu:</h3>
+{% highlight bash %}
+sudo apt-get install gem
+sudo gem install jekyll
+{% endhighlight %}
+
+<hr/>
+
+<h2>2) Download the git repo!</h2>
+<p>Make sure you have git installed then download the mirosite using the following commands:</p>
+
+{% highlight bash %}
+mkdir training
+cd training
+git init
+git remote add origin https://github.com/octocat/Spoon-Knife
+{% endhighlight %}
+
+<p>Once you have all the files run the following command to start a Jekyll server</p>
+
+{% highlight bash %}
+jekyll serve --watch
+{% endhighlight %}
+
+<p>You should now be able to view a local copy of the site at <a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a></p>
+<hr/>
+
+<h2>3) Navigate to the correct folder!</h2>
+<p>Create your main blog file in a folder following this nameing convention:</p>
+
+{% highlight bash %}
+cd _posts/[Year]/[Month]/[Day - Title of blog]/
+touch YYYY-MM-DD-Name-of-post.markdown
+{% endhighlight %}
+
+<p>for example</p>
+
+{% highlight bash %}
+cd _posts/2014/April/23 - Introduction to Jekyll/
+touch 2014-04-23-Introduction-to-Jekyll.markdown
+{% endhighlight %}
+
+<p>All of the required resources for your post must be placed in here (CSS/JS/Images). You may structure them however you like.</p>
+
+<hr/>
+
+<h2>4) Setup and structure your post!</h2>
+<p>Open your favourit text editor and edit the markdown file you created in the pervious step</p>
+
+<p>You first must define some basic variables at the start of the file paste the following lines editing them to match your post</p>
+
+{% highlight bash %}
+---
+layout: post
+title:  "Welcome to Jekyll!"
+description:  "Quick intro to Jekyll"
+author: "Sepehr Sabbagh-pour"
+date:   2014-04-23 11:21:17
+thumbnail: "http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+categories: Jekyll
+head: '<link rel="stylesheet" href="/path-to-your-css-file.css"><script src='/path-to-your-js-file.js'></script>'
+---
+{% endhighlight %}
+
+<p>Anything you place inside of the head variable would be placed into the head section of the page. You can include your js / css files here</p>
+
+<p>The thumbnail and description is what's shown on the index page of the site.</p>
