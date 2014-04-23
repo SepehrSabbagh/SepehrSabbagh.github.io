@@ -57,7 +57,7 @@ nav.navbar .navbar-brand {
   	height: 250px;
 }
 
-.posts span {
+.posts h3 {
 	color: #aaa;
 	font-family: Monaco, "Courier New", monospace;
 	font-size: 80%;
