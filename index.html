@@ -8,14 +8,18 @@ title: Orange Digital - Developer Training
 <div class="row" id="home">
 
     {% for post in site.posts %}
-	<div class="panel panel-default col-md-3">
-	  <div class="panel-body">
-	    <a href="{{ post.url }}">
-	    <h2>{{ post.title }}</h2>
-      	    {{ post.date | date_to_string }}
-	    </a>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img src="{{ post.thumbnail }}" alt="...">
+	      <div class="caption">
+		<a href="{{ post.url }}">
+		<h3>{{ post.title }}</h3>
+		<p>{{ post.date | date_to_string }}</p>
+		<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		</a>
+	      </div>
+	    </div>
 	  </div>
-	</div>
     {% endfor %}
 
 </div>

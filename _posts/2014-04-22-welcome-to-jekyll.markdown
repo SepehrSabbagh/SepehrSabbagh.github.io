@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-04-22 11:21:17
+thumbnail: "http://www.multipetros.gr/wp-content/uploads/2012/05/css3logo.png"
 categories: jekyll update
 ---
 
