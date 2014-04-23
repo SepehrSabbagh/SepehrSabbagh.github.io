@@ -54,7 +54,7 @@ nav.navbar .navbar-brand {
 	height: 300px;
 }
 
-.posts img {
+.posts .thumbnail a img {
   	height: 150px;
 }
 
