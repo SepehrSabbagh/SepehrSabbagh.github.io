@@ -20,9 +20,15 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%; 
+}
 
 h1 { margin-bottom: 1em; }
+
+h2 {
+  font-size: 32px;
+}
+
 p { margin: 1em 0; }
 
 a         {  }
@@ -53,11 +59,11 @@ nav.navbar .navbar-brand {
 	text-align: center;
 }
 
-.posts .thumbnail {
+.posts .panel-body {
 	height: 300px;
 }
 
-.posts .thumbnail a img {
+.posts .panel-body a img {
   	height: 150px;
 }
 
