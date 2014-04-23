@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="posts">
+	<h1>Training Material</h1>
 	{% for post in site.posts %}
 	  {% capture currentmonth %}{{post.date | date: "%B"}}{% endcapture %}
 	  {% if currentmonth != month %}

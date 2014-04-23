@@ -101,7 +101,7 @@ head: " <link rel='stylesheet' href='/assests/2014/April/23-Introduction-to-Jeky
 <h3>Bootstrap 3</h3>
 <p>By default <strong>bootstrap 3</strong> is avalible on every page.</p>
 <p>Bootstrap comes with a mobile first grid system and a number of premade componants that you may use.</p>
-<p>You can find more information about bootstrap 3 by visting the bootstrap 3 website: <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></p>
+<p>You can find more information about bootstrap 3 by visting the bootstrap 3 website: <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></p>
 
 <h3>Syntax highlighing</h3>
 <p><strong>Jekyll</strong> allows syntax highlighting for when you need to include code snippets. To use this feature just use the following syntax inside of your html</p> 
@@ -112,7 +112,7 @@ head: " <link rel='stylesheet' href='/assests/2014/April/23-Introduction-to-Jeky
 {&#37; endhighlight &#37;}
 </pre>
 
-<p>You can find out more about Jekyll's features by visiting: <a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a></p>
+<p>You can find out more about Jekyll's features by visiting: <a href="http://jekyllrb.com/docs/home/" target="_blank">http://jekyllrb.com/docs/home/</a></p>
 
 <hr/>
 
