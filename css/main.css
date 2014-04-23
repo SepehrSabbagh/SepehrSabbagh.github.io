@@ -51,15 +51,16 @@ nav.navbar .navbar-brand {
 /*****************************************************************************/
 .posts {
 	text-align: center;
+	height: 300px;
 }
 
 .posts img {
-  	height: 250px;
+  	height: 150px;
 }
 
 .posts h3 {
 	color: #aaa;
-	font-size: 26px;
+	font-size: 18px;
 }
 
 /*****************************************************************************/
