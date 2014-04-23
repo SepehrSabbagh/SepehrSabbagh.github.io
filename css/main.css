@@ -51,6 +51,9 @@ nav.navbar .navbar-brand {
 /*****************************************************************************/
 .posts {
 	text-align: center;
+}
+
+.posts .thumbnail {
 	height: 400px;
 }
 
